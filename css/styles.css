@@ -621,3 +621,89 @@ img {
 .modal-close-icon {
     transition: fill var(--transition-time-cubic);
 }
+
+
+/*=====  Subscribe section  ======*/
+.subscribe {
+    margin-left: 80px;
+}
+.subsc-form {
+    display: flex;
+    gap: 24px;
+}
+.input-text {
+    height: 40px;
+    width: 264px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-background-color);
+    padding: 8px 16px;
+    color: #FFFFFF;
+}
+.input-text::placeholder {
+    color: #FFFFFF;
+}
+.btn-subscribe {
+    display: inline-flex;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    padding: 8px 24px;
+    color: #FFFFFF;
+    border: none;
+    /* height: 40px;
+    width: 165px; */
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    transition: background-color var(--transition-time-cubic);
+    cursor: pointer;
+}
+.btn-subscribe::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    background-image: url(../images/form-send.svg);
+} 
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+
+
+/*=============================================
+=      MODAL FORM      =
+=============================================*/
+.modal-title {}
+
+.modal-form {}
+
+.form-label {}
+
+.form-wrapper {}
+
+.form-field {}
+
+.form-icon {}
+
+.form-comment {}
+
+.form-agreement {}
+
+.form-check-input {}
+
+.form-agreement-text {}
+
+.form-agreement-link {}
+
+.form-btn {}
+
+.btn {}
+
