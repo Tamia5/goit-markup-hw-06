@@ -365,9 +365,8 @@
                 <div class="subscribe">
                     <p class="footer-info-media">Subscribe</p>
                     <form class="subsc-form">
-                        <label for="email">
-                            <input type="text" name="email" placeholder="E-mail" class="input-text">
-                        </label>
+                        <label for="email"></label>
+                            <input type="text" name="email" placeholder="E-mail" class="input-text" id="email">
                             <button type="button" class="btn-subscribe">Subscribe</button>
                     </form>
                 </div>
@@ -383,47 +382,50 @@
                 </svg>
             </button>
 
-            <strong class="modal-title">Leave your contacts and we will call you back</strong>
-
             <form class="modal-form" name="modal_form">
-                <label class="form-label" for="modal_name">Name</label>
+                <h2 class="modal-title">Leave your contacts and we will call you back</h2>
                 <div class="form-wrapper">
+                    <label class="form-label" for="modal_name">Name</label>
                     <input class="form-field" type="text" name="modal_name" id="modal_name">
-                    <svg class="form-icon" width="18" heigth="18">
+                    <svg class="form-icon" width="18">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
-                <label class="form-label" for="modal_phone">Phone</label>
                 <div class="form-wrapper">
+                    <label class="form-label" for="modal_phone">Phone</label>
                     <input class="form-field" type="text" name="modal_phone" id="modal_phone">
-                    <svg class="form-icon" width="18" heigth="24">
+                    <svg class="form-icon" width="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
-                <label class="form-label" for="modal_email">Email</label>
                 <div class="form-wrapper">
+                    <label class="form-label" for="modal_email">Email</label>
                     <input class="form-field" type="text" name="modal_email" id="modal_email">
-                    <svg class="form-icon" width="18" heigth="24">
+                    <svg class="form-icon" width="18">
                         <use href="./images/icons.svg#icon-mail"></use>
                     </svg>
                 </div>
 
-                <label class="form-label" for="modal_comment">Comment</label>
-                <textarea
-                class="form-comment"
-                name="modal_comment"
-                id="modal_comment"
-                rows="6"
-                placeholder="Text input">
-                </textarea>
+                <div class="form-wrapper">
+                    <label class="form-label" for="modal_comment">Comment</label>
+                    <textarea
+                    class="form-comment"
+                    name="modal_comment"
+                    id="modal_comment"
+                    rows="6"
+                    placeholder="Text input">
+                    </textarea>
+                </div>
 
-                <label class="form-agreement">
-                    <input class="form-check-input" type="checkbox" name="modal_agreement" />
-                    <span class="form-agreement-text">I accept the terms and conditions of the
-                        <a class="form-agreement-link" href="">Privacy Policy</a></span>
-                </label>
+                <div class="form-check">
+                    <label class="form-agreement">
+                        <input class="form-check-input" type="checkbox" name="modal_agreement">
+                        <span class="form-agreement-text">I accept the terms and conditions of the
+                            <a class="form-agreement-link" href="">Privacy Policy</a></span>
+                    </label>
+                </div>
                 
-                <button class="form-btn btn" type="submit">Send</button>
+                <button class="form-btn" type="submit">Send</button>
 
             </form>
         </div>
