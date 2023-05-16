@@ -611,7 +611,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color var(--transition-time-cubic), border var(--transition-time-cubic);
+    transition: background-color var(--transition-time-cubic), border var(--transition-time-cubic), fill var(--transition-time-cubic);
     fill: var(--modal-open-btn);
 }
 .modal-close-btn:hover,
@@ -699,7 +699,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .form-label {
@@ -749,9 +749,14 @@ img {
     color: rgba(46, 47, 66, 0.4);
     height: 120px;
     resize: none;
+    transition: border-color var(--transition-time-cubic);
+}
+.form-comment:hover,
+.form-comment:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
 }
 .form-check {
-    margin-top: 16px;
     margin-bottom: 24px;
 }
 .form-agreement {
